@@ -1,3 +1,62 @@
+body{
+  background: linear-gradient(white, rgb(148, 148, 148));
+  height: 100vh;
+}
+
+
+.aboutMe{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .profilePic{
-  max-width: 60vw;
+  max-width: 50vw;
+  padding: 30px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.textDiv {
+  padding: 30px;
+}
+
+.h1 {
+  padding: 10px;
+}
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 950px) {
+  .aboutMe {
+      flex-wrap: wrap;
+  }
+  .profilePicDiv {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
