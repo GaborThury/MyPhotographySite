@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  
   <title>Galleries</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="./index.html">Frontpage <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="./index.html">Frontpage <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="./about.html">About me</a>
           <a class="nav-item nav-link" href="./contact.html">Contact</a>
           <a class="nav-item nav-link active" href="./galleries.html">Galleries</a>
@@ -27,6 +29,47 @@
       </div>
     </nav>
   </div>
+
+<!--
+  <div class="col-md-5 mb-4">
+    <h1>Photo gallery</h1>
+    <p>Here, you can find some of my photos. For all of them, please visit my Flickr page.</p>
+  </div>
+-->
+  <section class="bg-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="./images/snowy.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                        <img src="./images/snowy.jpg" class="img-fluid img-thumbnail" alt="snowy">
+                    </a>
+                    <figcaption class="figure-caption bg-secondary text-center py-2 mb-3">Durmitor</figcaption>
+                </div>
+                <div class="col-md-3">
+                    <a href="./images/Austria.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                        <img src="./images/Austria.jpg" class="img-fluid img-thumbnail" alt="Austria">
+                    </a>                 
+                    <figcaption class="figure-caption bg-secondary text-center py-2 mb-3">Alps</figcaption>
+                </div>
+                <div class="col-md-3">
+                    <a href="./images/doge.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                        <img src="./images/doge.jpg" class="img-fluid img-thumbnail" alt="doge">
+                    </a>                
+                    <figcaption class="figure-caption bg-secondary text-center py-2 mb-3">Transsylvania</figcaption>
+                </div>
+                <div class="col-md-3">
+                    <a href="./images/lookout.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+                        <img src="./images/lookout.jpg" class="img-fluid img-thumbnail" alt="lookout">
+                    </a>
+                    <figcaption class="figure-caption bg-secondary text-center py-2 mb-3">Mecseknádasd</figcaption>
+                </div>
+            </div>
+        </div>
+
+
+  </section>
+
+
 
   <footer class="footer fixed-bottom">
     <div class="container text-center">
@@ -37,6 +80,14 @@
       <a href="https://www.youtube.com/channel/UCR86fSFu8BoKue4dLfLwNFg/featured"><i class="fa fa-youtube"></i></a>
     </div>
   </footer>
+
+  
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  <script src="script/script2.js"></script>
 
 </body>
 </html>
